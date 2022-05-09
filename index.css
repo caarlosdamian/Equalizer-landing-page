@@ -1,0 +1,57 @@
+:root {
+    --blue: #66E2DC;
+    --orange: #FA7453;
+    --ligh-yellow: #FFB964;
+    --light-white: #FCFAF9;
+    --black: #191826;
+    --white: #fff;
+}
+
+body {
+    position: relative;
+
+}
+
+.bg-desktop {
+    position: absolute;
+    top: -300px;
+    left: -250px;
+}
+
+.bg-tablet {
+    display: none;
+}
+
+.bg-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .bg-desktop {
+        display: none;
+    }
+
+    .bg-tablet {
+        display: block;
+        position: absolute;
+        top: -300px;
+        left: -250px;
+    }
+}
+
+@media (max-width: 375px) {
+    .bg-desktop {
+        display: none;
+    }
+
+    .bg-tablet {
+        display: none;
+    }
+
+    .bg-mobile {
+        display: block;
+        position: absolute;
+        top: -300px;
+        right: -150px;
+    }
+}
